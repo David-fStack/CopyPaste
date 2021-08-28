@@ -1,8 +1,7 @@
-/*
-	Rocket Internet by TEMPLATE STOCK
-    templatestock.co @templatestock
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
+:root {
+    --fuentePrimaria: 'Alex Brush', cursive;
+}
+
 
 /* Typography CSS */
 body
@@ -23,7 +22,7 @@ body
 }
 
 #homeFullScreen {
-    background-image: url('../images/ricohportada.jpg');
+    background-image: url('../images/hero.jpg');
     overflow: hidden;
 }
 
@@ -33,16 +32,18 @@ body
     text-align: center;
     margin: auto;
 }
-
-.header-text h1
-{
+.titulo-p {
+    font-size: 2rem;
+    font-family: var(--fuentePrimaria);
+    color: rgb(97, 40, 204);
+}
+.header-text h1{
     font-size: 60px;
     color: #fff;
     text-transform: uppercase;
 }
 
-.header-text .vertical-line
-{
+.header-text .vertical-line{
     height: 2px;
     background-color: #fff;
     width: 150px;
@@ -51,11 +52,42 @@ body
     margin-bottom: 30px;
 }
 
-.header-text p
-{
+.header-text p {
     font-size: 26px;
     color: #fff;
 }
+/* BANNER */
+
+.banner {
+    background-color: rgb(185, 48, 174);
+    height: auto;
+    width: auto;
+}
+
+.links {
+    font-size: 2rem;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.a {
+    color: white;
+    text-decoration: none;
+    margin: .5rem auto;
+}
+
+.a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(214, 199, 63);
+    border-radius: .5rem;
+
+}
+
 
 
 /* feature */
@@ -110,12 +142,12 @@ body
 }
 
 /* Call to Action */
-.call-top-action
-{
+.call-top-action{   
     background-color: #42484c;
     color: #fff;
     padding: 50px 0px;
     margin-top: 50px;
+    
 }
 
 .call-top-action h1

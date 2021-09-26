@@ -56,13 +56,20 @@ body
     font-size: 26px;
     color: #fff;
 }
+
 /* BANNER */
+
+
+
+
 
 .banner {
     background-color: rgb(185, 48, 174);
     height: auto;
     width: auto;
 }
+
+
 
 .links {
     font-size: 2rem;
@@ -71,7 +78,24 @@ body
     flex-direction: column;
     align-items: center;
     
+}
 
+@media (min-width: 486px) {
+    .links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .completo {
+        grid-column: 1 / 3;
+    }
+}
+
+@media (min-width: 768px) {
+    .links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 .a {

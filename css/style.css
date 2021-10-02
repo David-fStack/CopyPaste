@@ -84,10 +84,11 @@ body
     .links {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+
     }
-    .completo {
+    /* .completo {
         grid-column: 1 / 3;
-    }
+    } */
 }
 
 @media (min-width: 768px) {
